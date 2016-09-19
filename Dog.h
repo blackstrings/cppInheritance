@@ -9,7 +9,10 @@ namespace XL{
 	public:
 		Dog();
 		~Dog();
-		virtual void move();	//virtual needs to stay to match base
+
+		//virtual doesn't need to stay to match base
+		//only if you want another child to override it
+		void move();	
 		virtual int getAge();
 		int age;
 	};

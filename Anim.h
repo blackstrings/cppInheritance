@@ -8,6 +8,9 @@ namespace XL{
 	public:
 		virtual ~Anim(){};			//you have to open and close scope for destructor
 		virtual void move() = 0;	//pure virtual function
+		
+		//pure virtual means the child must define this class
+		//virtual void getName() = 0;
 		virtual int getAge() = 0;
 	};	//need this semicolon here
 }
